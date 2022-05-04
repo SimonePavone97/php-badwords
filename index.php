@@ -1,7 +1,7 @@
 <?php
 
-$paragrafo=" Ciao, come stai? "
-//$parametro1 = $_GET['']
+$paragrafo=" Ciao, come stai? ";
+$parametro1 = $_GET["parametro1"];
 ?>
 
 
@@ -36,7 +36,7 @@ $paragrafo=" Ciao, come stai? "
 <form methods="GET">
     <input type="text" name="parametro1">
     <button type="submit">INVIA</button>
-    <?php echo str_replace('come', '***', $paragrafo);
+    <?php echo str_replace($parametro1, '***', $paragrafo);
     
     ?>
 </form>
